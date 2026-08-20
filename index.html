@@ -90,64 +90,6 @@
 
 
 
-
-
-  <!-- Dynamic Image Switcher Script -->
-  <script>
-    const previews = {
-      project: {
-        title: "Latest Project Showcase",
-        desc: "A view of my recently launched web app featuring custom UI components.",
-        image: "https://via.placeholder.com/600x400/fde047/000000?text=Project+Screenshot",
-        url: "https://your-main-site.com"
-      },
-      github: {
-        title: "GitHub Activity",
-        desc: "Check out my open-source repositories, activity graph, and code snippets.",
-        image: "https://via.placeholder.com/600x400/a5f3fc/000000?text=GitHub+Dashboard",
-        url: "https://github.com/yourusername"
-      },
-      twitter: {
-        title: "Twitter / X Feed",
-        desc: "Thoughts on front-end development, UI design trends, and build logs.",
-        image: "https://via.placeholder.com/600x400/bae6fd/000000?text=Twitter+Profile",
-        url: "https://twitter.com/yourusername"
-      },
-      youtube: {
-        title: "YouTube Channel",
-        desc: "Watch my video tutorials on web development, design systems, and tech.",
-        image: "https://via.placeholder.com/600x400/fecaca/000000?text=YouTube+Video+Preview",
-        url: "https://youtube.com/@yourusername"
-      }
-    };
-
-    function showPreview(key, event) {
-      // Prevent opening link immediately if you want user to preview first
-      // event.preventDefault(); 
-
-      const data = previews[key];
-      if (!data) return;
-
-      const container = document.getElementById('preview-container');
-      
-      // Fade transition effect
-      container.style.opacity = '0';
-      
-      setTimeout(() => {
-        document.getElementById('preview-image').src = data.image;
-        document.getElementById('preview-title').textContent = data.title;
-        document.getElementById('preview-desc').textContent = data.desc;
-        document.getElementById('preview-status').textContent = key;
-        
-        const actionBtn = document.getElementById('preview-link');
-        actionBtn.href = data.url;
-        actionBtn.classList.remove('hidden');
-
-        container.style.opacity = '1';
-      }, 150);
-    }
-  </script>
-
  
 
 </body>
