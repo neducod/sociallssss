@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links & Socials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Continuous Marquee Animation */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 12s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white font-mono min-h-screen flex flex-col justify-between">
+
+  <!-- Fluid Moving Navbar -->
+  <nav class="w-full bg-emerald-400 text-zinc-950 border-b-4 border-emerald-300 overflow-hidden py-3 shadow-[0_4px_15px_rgba(52,211,153,0.3)]">
+    <div class="animate-marquee whitespace-nowrap font-black uppercase text-sm tracking-widest">
+      <span class="mx-4">⚡ WELCOME TO MY HUB</span>
+      <span class="mx-4">★</span>
+      <span class="mx-4">AVAILABLE FOR FREELANCE WORK</span>
+      <span class="mx-4">★</span>
+      <span class="mx-4">CHECK OUT MY PROJECTS</span>
+      <span class="mx-4">★</span>
+      <span class="mx-4">CONNECT ON SOCIALS</span>
+      <span class="mx-4">★</span>
+      <!-- Duplicate content for smooth loop -->
+      <span class="mx-4">⚡ WELCOME TO MY HUB</span>
+      <span class="mx-4">★</span>
+      <span class="mx-4">AVAILABLE FOR FREELANCE WORK</span>
+      <span class="mx-4">★</span>
+      <span class="mx-4">CHECK OUT MY PROJECTS</span>
+      <span class="mx-4">★</span>
+      <span class="mx-4">CONNECT ON SOCIALS</span>
+      <span class="mx-4">★</span>
+    </div>
+  </nav>
+
+  <!-- Main Container: 2-Column Grid on Desktop -->
+  <div class="w-full max-w-5xl mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    
+    <!-- LEFT COLUMN: Profile & Links Stack -->
+    <main class="w-full space-y-6">
+
+      <!-- Profile Header Card -->
+      <header class="bg-zinc-900 border-2 border-zinc-800 rounded-2xl p-6 shadow-[6px_6px_0px_0px_rgba(16,185,129,0.3)] text-center">
+        <div class="relative w-24 h-24 mx-auto mb-4">
+          <img src="https://via.placeholder.com/150" alt="Profile Avatar" class="w-full h-full object-cover rounded-full border-2 border-emerald-400">
+          <span class="absolute bottom-0 right-0 bg-cyan-400 text-zinc-950 border border-zinc-950 rounded-full px-2 py-0.5 text-xs font-black">
+            ⚡
+          </span>
+        </div>
+        
+        <h1 class="text-2xl font-black uppercase tracking-tight text-white">Your Name</h1>
+        <p class="text-xs font-bold uppercase tracking-widest mt-1 bg-emerald-400/10 text-emerald-400 inline-block px-3 py-1 border border-emerald-400/30 rounded-md">
+          Digital Creator / Developer
+        </p>
+        <p class="text-sm font-medium mt-3 text-zinc-400">
+          Building cool stuff on the internet. Hover on desktop or tap to explore links below!
+        </p>
+      </header>
+
+      <!-- Social Links Stack -->
+      <nav class="space-y-4">
+        
+        <!-- Featured Link -->
+        <a href="https://your-main-site.com" target="_blank" rel="noopener noreferrer"
+           onmouseenter="hoverPreview('project')"
+           class="flex items-center justify-between p-4 bg-emerald-400 text-zinc-950 border-2 border-emerald-300 rounded-xl font-black shadow-[5px_5px_0px_0px_rgba(6,182,212,0.6)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_rgba(6,182,212,0.6)] active:translate-x-[5px] active:translate-y-[5px] active:shadow-none">
+          <div class="flex items-center space-x-3">
+            <span class="text-xl">🚀</span>
+            <span>Latest Project</span>
+          </div>
+          <span>→</span>
+        </a>
+
+        <!-- GitHub Link -->
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+           onmouseenter="hoverPreview('github')"
+           class="flex items-center justify-between p-4 bg-zinc-900 text-white border-2 border-zinc-800 rounded-xl font-bold shadow-[5px_5px_0px_0px_rgba(16,185,129,0.2)] transition-all hover:border-cyan-400 hover:text-cyan-400 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_rgba(6,182,212,0.4)] active:translate-x-[5px] active:translate-y-[5px] active:shadow-none">
+          <div class="flex items-center space-x-3">
+            <span class="text-xl">💻</span>
+            <span>GitHub Profile</span>
+          </div>
+          <span>→</span>
+        </a>
+
+        <!-- Twitter Link -->
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"
+           onmouseenter="hoverPreview('twitter')"
+           class="flex items-center justify-between p-4 bg-zinc-900 text-white border-2 border-zinc-800 rounded-xl font-bold shadow-[5px_5px_0px_0px_rgba(16,185,129,0.2)] transition-all hover:border-emerald-400 hover:text-emerald-400 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_rgba(16,185,129,0.4)] active:translate-x-[5px] active:translate-y-[5px] active:shadow-none">
+          <div class="flex items-center space-x-3">
+            <span class="text-xl">🐦</span>
+            <span>Twitter / X</span>
+          </div>
+          <span>→</span>
+        </a>
+
+        <!-- YouTube Link -->
+        <a href="https://youtube.com/@yourusername" target="_blank" rel="noopener noreferrer"
+           onmouseenter="hoverPreview('youtube')"
+           class="flex items-center justify-between p-4 bg-zinc-900 text-white border-2 border-zinc-800 rounded-xl font-bold shadow-[5px_5px_0px_0px_rgba(16,185,129,0.2)] transition-all hover:border-teal-400 hover:text-teal-400 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_rgba(45,212,191,0.4)] active:translate-x-[5px] active:translate-y-[5px] active:shadow-none">
+          <div class="flex items-center space-x-3">
+            <span class="text-xl">📺</span>
+            <span>YouTube Channel</span>
+          </div>
+          <span>→</span>
+        </a>
+
+      </nav>
+    </main>
+
+    <!-- RIGHT COLUMN: Desktop Hover Preview Card -->
+    <aside class="hidden md:block sticky top-8 bg-zinc-900 border-2 border-zinc-800 rounded-2xl p-6 shadow-[8px_8px_0px_0px_rgba(6,182,212,0.2)]">
+      
+      <div class="flex items-center justify-between pb-3 border-b-2 border-zinc-800 mb-4">
+        <span class="text-xs font-black uppercase tracking-wider bg-cyan-400 text-zinc-950 px-2 py-1 rounded">Hover Preview</span>
+        <span class="text-xs font-bold uppercase text-emerald-400" id="preview-status">Project</span>
+      </div>
+
+      <div id="preview-container" class="space-y-3 transition-opacity duration-150">
+        <img id="preview-image" src="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Project+Screenshot" alt="Preview Display" class="w-full h-52 object-cover rounded-xl border-2 border-zinc-700 shadow-[4px_4px_0px_0px_rgba(16,185,129,0.3)]">
+        <h2 id="preview-title" class="text-xl font-black uppercase mt-4 text-white">Latest Project Showcase</h2>
+        <p id="preview-desc" class="text-xs font-medium text-zinc-400">
+          A view of my recently launched web app featuring custom UI components.
+        </p>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t-2 border-zinc-800 bg-zinc-950">
+    <p class="text-xs font-bold uppercase tracking-wider text-zinc-500">
+      © 2026 Your Name • Built with HTML, Tailwind & JS
+    </p>
+  </footer>
+
+  <!-- Desktop Hover Image Switcher Script -->
+  <script>
+    const previews = {
+      project: {
+        title: "Latest Project Showcase",
+        desc: "A view of my recently launched web app featuring custom UI components.",
+        image: "https://via.placeholder.com/600x400/06b6d4/ffffff?text=Project+Screenshot"
+      },
+      github: {
+        title: "GitHub Activity",
+        desc: "Check out my open-source repositories, activity graph, and code snippets.",
+        image: "https://via.placeholder.com/600x400/10b981/ffffff?text=GitHub+Dashboard"
+      },
+      twitter: {
+        title: "Twitter / X Feed",
+        desc: "Thoughts on front-end development, UI design trends, and build logs.",
+        image: "https://via.placeholder.com/600x400/3b82f6/ffffff?text=Twitter+Profile"
+      },
+      youtube: {
+        title: "YouTube Channel",
+        desc: "Watch my video tutorials on web development, design systems, and tech.",
+        image: "https://via.placeholder.com/600x400/2dd4bf/ffffff?text=YouTube+Video+Preview"
+      }
+    };
+
+    function hoverPreview(key) {
+      if (window.innerWidth < 768) return;
+
+      const data = previews[key];
+      if (!data) return;
+
+      const container = document.getElementById('preview-container');
+      
+      container.style.opacity = '0.3';
+      
+      setTimeout(() => {
+        document.getElementById('preview-image').src = data.image;
+        document.getElementById('preview-title').textContent = data.title;
+        document.getElementById('preview-desc').textContent = data.desc;
+        document.getElementById('preview-status').textContent = key;
+        
+        container.style.opacity = '1';
+      }, 100);
+    }
+  </script>
+
+</body>
+</html>
