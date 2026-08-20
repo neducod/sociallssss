@@ -1,96 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerome Josephine</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <script src="https://cdn.tailwindcss.com"></script>
-
-
-
-
-
-
-
-
-     <meta name="description" content="Portfolio of Josephine Jerome — a frontend developer in Nigeria specializing in React and modern, responsive web interfaces. Explore my skills, responsive designs, and contact me for web development opportunities @nedu_nony" />
-  <link rel="canonical" href="https://josephines-portfolio.vercel.app/" />
-  <link rel="canonical" href="https://josephines-portfolio.vercel.app/" />
-
-
-
-  <meta name="author" content="Josephine Jerome">
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Josephine Jerome | Frontend Developer in Nigeria" />
-  <meta property="og:description" content="Explore my React projects, UI work, and case studies." />
-  <meta property="og:url" content="https://x.com/nedu_nony" />
-  <meta property="og:image" content="https://josephines-portfolio.vercel.app/og.png" />
-  <meta property="og:site_name" content="Josephine Jerome Portfolio" />
-
-
-
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="https://x.com/nedu_nony" />
-  <meta name="twitter:creator" content="https://x.com/nedu_nony" />
-  <meta name="twitter:title" content="Josephine Jerome | Frontend Developer in Nigeria" />
-  <meta name="twitter:description" content="Explore my React projects, UI work, and case studies." />
-  <meta name="twitter:image" content="https://josephines-portfolio.vercel.app/og.png" />
-
-
-    <!-- <link rel="icon" type="image/png" href="/J.png" /> -->
-    <link rel="shortcut icon" href="./img/J.png" type="image/x-icon">
-
-
-      <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Josephine Chinedu Jerome",
-      "jobTitle": "Frontend Developer",
-      "url": "https://josephines-portfolio.vercel.app/",
-      "sameAs": [
-        "https://twitter.com/https://x.com/nedu_nony",
-        "https://www.instagram.com/nedu_nony/",
-        "https://hashnode.com/@josephinejerome"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "NG"
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links & Socials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Marquee animation for the fluid navbar */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
     }
-    </script>
-
-
-    <meta name="google-site-verification" content="NMRgp5V2p5ntLIVaSSKfNJcPDSd0zv497P4OWKVwlsA" />
-
-
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 12s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+<body class="bg-amber-50 text-black font-mono min-h-screen flex flex-col justify-between">
 
-  <!-- <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-sm text-center">
-    <img
-      src="./img/imggg.png"
-      alt="Profile"
-      class="mx-auto rounded-full w-24 h-24 mb-4"
-    />
-    <h1 class="text-xl font-semibold text-gray-800"> <a href="https://x.com/nedu_nony">Josephine Chinedu Jerome</a></h1>
-    <p class="text-sm text-gray-500 mb-6">Frontend Developer | React | Tailwind</p>
-
-    <div class="space-y-3">
-      <a href="https://x.com/nedu_nony" class="block bg-gray-800 text-white py-2 rounded-xl shadow hover:bg-gray-700 transition">X</a>
-      <a href="https://josephines-portfolio.vercel.app/" class="block bg-gray-800 text-white py-2 rounded-xl shadow hover:bg-gray-700 transition">Portfolio</a>
-      <a href="https://www.fiverr.com/users/josephin_jerome" class="block bg-gray-800 text-white py-2 rounded-xl shadow hover:bg-gray-700 transition">Fiverr</a>
-      <a href="https://hashnode.com/@josephinejerome" class="block bg-gray-800 text-white py-2 rounded-xl shadow hover:bg-gray-700 transition">Hashnode</a>
-      <a href="mailto:nedunony16@gmail.com" class="block bg-gray-800 text-white py-2 rounded-xl shadow hover:bg-gray-700 transition">Contact Me</a>
-    </div>
-  </div> -->
-
-
-
-
-
+  <!-- Fluid Moving Navbar -->
   <nav class="w-full bg-yellow-300 border-b-4 border-black overflow-hidden py-3 shadow-[0_4px_0_0_rgba(0,0,0,1)]">
     <div class="animate-marquee whitespace-nowrap font-black uppercase text-sm tracking-widest">
       <span class="mx-4">⚡ WELCOME TO MY HUB</span>
@@ -113,6 +46,7 @@
     </div>
   </nav>
 
+  <!-- Main Container: 2-Column Desktop Grid Layout -->
   <div class="w-full max-w-5xl mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
     
     <!-- LEFT COLUMN: Profile & Links Stack -->
@@ -274,8 +208,6 @@
       }, 150);
     }
   </script>
-
- 
 
 </body>
 </html>
