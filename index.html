@@ -64,10 +64,24 @@
 
 
     <meta name="google-site-verification" content="NMRgp5V2p5ntLIVaSSKfNJcPDSd0zv497P4OWKVwlsA" />
-
+    <style>
+      /* Continuous Marquee Animation */
+      @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        display: flex;
+        width: 200%;
+        animation: marquee 12s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+    </style>
 
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+<body class="bg-zinc-950 text-white font-mono min-h-screen flex flex-col justify-between">
 
   <nav class="w-full bg-emerald-400 text-zinc-950 border-b-4 border-emerald-300 overflow-hidden py-3 shadow-[0_4px_15px_rgba(52,211,153,0.3)]">
     <div class="animate-marquee whitespace-nowrap font-black uppercase text-sm tracking-widest">
